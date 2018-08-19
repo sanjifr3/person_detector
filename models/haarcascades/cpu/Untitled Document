@@ -1,0 +1,26 @@
+Front
+	haarcascade_frontalface_alt - slow but has really good detection rates
+	lbpcascade_frontalface.xml - fast but lots of false positives
+
+Profile	
+	haarcascade_profileface - can only detect the left side of my face
+	haarcascade_profileface2 - slow/can sometimes detect right side of my face
+	lbpcascade_profileface - can only detect the left side of my face
+	lbpcascade_profileface2 - can only detect the left side of my face
+
+Ear
+	haarcascade_mcs_rightear - good - few/none false positives - decent range
+	haarcascade_mcs_leftear - good - few/non false positives - decent range
+
+Mouth
+	haarcascade_mcs_mouth - bad - lots of false positives and only frontal
+
+Nose
+	haarcascade_mcs_nose - bad - lots of false positives and only frontal
+
+Eyes
+	haarcascade_eye_tree_eyeglasses - good - but low ranges and eyes need to be wide
+
+
+
+

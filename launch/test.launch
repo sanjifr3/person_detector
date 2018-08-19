@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  <arg name="launch_prefix" default=""/>
+  <!-- <arg name="launch_prefix" default="valgrind"/>-->
+  <!-- <arg name="output" default="screen"/> -->
+  <!-- <arg name="output" default="log"/> -->
+
+  <!-- Load parameters -->
+  <rosparam command="load" ns="PersonDetector" file="$(find person_detector)/cfg/person_detector.yaml"/>
+
+  <!-- Start darknet and ros wrapper -->
+  <node pkg="person_detector" type="person_detector" name="PersonDetector" output="screen" launch-prefix="$(arg launch_prefix)"/>
+
+</launch>

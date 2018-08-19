@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="2">
+
+  <name>person_detector</name>
+  <maintainer email="r.sanjif@gmail.com">Sanjif Rajaratnam</maintainer>
+  <description>Person Detection and Recognition Package</description>
+  <version>2.1.0</version>
+  <license>BSD</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+ 
+  <depend>message_generation</depend>
+	<depend>message_runtime</depend>
+  <depend>sensor_msgs</depend>
+	<depend>roscpp</depend>
+	<depend>rospy</depend>
+	<depend>roslib</depend>
+	<depend>std_msgs</depend>
+	<depend>cv_bridge</depend>
+	<depend>uvc_camera</depend>
+	<depend>image_transport</depend>
+	<depend>message_filters</depend>
+	<depend>dynamic_reconfigure</depend>
+	<depend>pcl_conversions</depend>
+	<depend>pcl_ros</depend>
+	<depend>image_utils</depend>
+	<depend>object_detector</depend>
+	
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

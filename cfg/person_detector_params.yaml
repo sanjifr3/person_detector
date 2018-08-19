@@ -1,0 +1,27 @@
+FaceDetector:
+  min_dist_pct: 0.0625 # percent of width
+  face:
+    type: haarcascade_frontalface_alt
+    scale_factor: 1.1 # 1.3
+    min_neighbors: 3
+    min_size: [35,35] # [50,50]
+    max_size: [140,140] # [120,120]
+  profile:
+    type: haarcascade_profileface2
+    scale_factor: 1.3
+    min_neighbors: 3
+    min_size: [35,35]
+    max_size: [140,140] # [120,120]
+  dlib:
+    sp_model: shape_predictor_68_face_landmarks
+    net_model: dlib_face_recognition_resnet_model_v1
+  hog:
+    win_size: [64,128] # [64,64]
+    block_size: [16,16] # Only supported size?
+    block_stride: [8,8]
+    win_stride: 1 # *block_stride?
+    cell_size: [8,8] # Only supported size?
+    bins: 9 # Only supported size?
+    nlvls: 13 # 64
+    scale_factor: 1.05
+    hit_thr: 0
